@@ -142,7 +142,6 @@ const SignUp = () => {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [successful, setSuccessful] = useState('idle');
-  const navigate = useNavigate();
 
   // promise chaigng
 //   const handleSignUpPromise = (e) => {
@@ -238,17 +237,6 @@ const SignUp = () => {
           {loading ? <CircularProgress size={24} /> : 'ثبت‌نام'}
         </Button>
         {successful === 'success' && <Alert severity="success">ثبت‌نام موفقیت‌آمیز</Alert>}
-        {successful === 'success' && (
-          <Button
-            fullWidth
-            variant="outlined"
-            color="primary"
-            sx={{ mt: 2 }}
-            onClick={() => navigate('/')}
-          >
-            رفتن به صفحه اصلی
-          </Button>
-        )}
         {successful === 'error' && <Alert severity="error">ثبت‌نام ناموفق</Alert>}
       </Box>
     </Box>
