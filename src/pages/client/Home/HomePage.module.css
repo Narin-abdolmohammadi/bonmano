@@ -1,0 +1,181 @@
+.homeContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.darkHomeContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #0a192f;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.topButtons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.heroSection {
+  margin: 40px 0;
+}
+
+.mainTitle {
+  font-size: 32px;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-bottom: 15px;
+}
+
+.darkHomeContainer .mainTitle {
+  color: white;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #64b5f6;
+  margin-bottom: 30px;
+}
+
+.darkHomeContainer .subtitle {
+  color: #e3f2fd;
+}
+
+.featuresSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px 0;
+}
+
+.featureCard {
+  background-color: #f0f7ff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e3f2fd;
+  width: 250px;
+}
+
+.darkHomeContainer .featureCard {
+  background-color: #112240;
+  border-color: #1d3461;
+}
+
+.featureCard:hover {
+  transform: translateY(-3px);
+}
+
+.featureIcon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.featureCard h3 {
+  color: #4a90e2;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.darkHomeContainer .featureCard h3 {
+  color: white;
+}
+
+.featureCard p {
+  color: #64b5f6;
+  font-size: 16px;
+}
+
+.darkHomeContainer .featureCard p {
+  color: #e3f2fd;
+}
+
+.userPanelButton {
+  background-color: #e3f2fd;
+  color: #4a90e2;
+  border: 1px solid #bbdefb;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.darkHomeContainer .userPanelButton {
+  background-color: #112240;
+  color: white;
+  border-color: #1d3461;
+}
+
+.userPanelButton:hover {
+  background-color: #bbdefb;
+  color: #357abd;
+}
+
+.darkHomeContainer .userPanelButton:hover {
+  background-color: #1d3461;
+  color: white;
+}
+
+.userIcon {
+  font-size: 16px;
+}
+
+.themeToggle {
+  background-color: #e3f2fd;
+  border: 1px solid #bbdefb;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.darkHomeContainer .themeToggle {
+  background-color: #112240;
+  border-color: #1d3461;
+  color: white;
+}
+
+.themeToggle:hover {
+  background-color: #bbdefb;
+}
+
+.darkHomeContainer .themeToggle:hover {
+  background-color: #1d3461;
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 24px;
+  }
+  
+  .featureCard {
+    width: 100%;
+  }
+
+  .topButtons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .userPanelButton, .themeToggle {
+    width: auto;
+  }
+} 
