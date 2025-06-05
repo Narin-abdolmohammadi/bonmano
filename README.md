@@ -12,6 +12,6 @@ then run your project.
 npm run dev
 ```
 
-your app is now running on [http://localhost:5173](http://localhost:5174/)
+
 
 
